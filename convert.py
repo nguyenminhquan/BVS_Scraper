@@ -11,6 +11,7 @@ patterns = {
     '[ỳýỷỹỵ]': 'y'
 }
 
+
 def unicode_to_ascii(text):
     """
     This function convert Unicode (Vietnamese) string to ASCII string
@@ -24,9 +25,11 @@ def unicode_to_ascii(text):
         output = re.sub(regex.upper(), replace.upper(), output)
     return output
 
+
 if __name__ == '__main__':
-	from sys import argv
-	if len(argv) == 2:
-		print(unicode_to_ascii(argv[1]))
-	else:
-		pass
+    from sys import argv
+
+    if len(argv) == 2:
+        print(unicode_to_ascii(argv[1]))
+    else:
+        pass
